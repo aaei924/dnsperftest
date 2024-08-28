@@ -7,23 +7,28 @@ command -v bc > /dev/null || { echo "error: bc was not found. Please install bc.
 
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
+# 66.228.61.140#Archuser
+# 149.112.121.20#CanadianShield
 PROVIDERSV4="
-168.126.63.1#KT 
 210.220.163.82#SK-Broadband 
+219.250.36.130#SK-Broadband2 
 164.124.101.2#LGU+ 
+203.248.252.2#LGU+2 
 180.182.54.1#LG-Hellovision 
+180.182.54.2#LG-Hellovision2 
 94.140.14.14#Adguard 
 94.140.14.140#Adguard-uf 
 89.38.131.38#Alekberg
-66.228.61.140#Archuser
-45.91.92.121#BlahDNS-CH
-149.112.121.20#CanadianShield
 208.67.222.222#OpenDNS 
 194.242.2.2#MullvadVPN 
 185.222.222.222#dnssb 
 1.1.1.1#Cloudflare 
+1.0.0.1#Cloudflare2 
+1.1.1.2#Cloudflare-am
+1.0.0.2#Cloudflare-am2 
 4.2.2.1#level3 
 8.8.8.8#Google 
+8.8.4.4#Google2 
 9.9.9.9#Quad9 
 199.85.126.20#norton 
 185.228.168.168#cleanbrowsing 
