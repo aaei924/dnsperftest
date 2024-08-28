@@ -8,12 +8,20 @@ command -v bc > /dev/null || { echo "error: bc was not found. Please install bc.
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
 PROVIDERSV4="
+168.126.63.1#kt 
+210.220.163.82#skb 
+164.124.101.2#lgupl 
+180.182.54.1#hellovision 
+94.140.14.14#adguard 
+94.140.14.140#adguarduf 
+208.67.222.222#cisco 
+194.242.2.2#mullvad 
+185.222.222.222#dnssb 
 1.1.1.1#cloudflare 
 4.2.2.1#level3 
 8.8.8.8#google 
 9.9.9.9#quad9 
 80.80.80.80#freenom 
-208.67.222.123#opendns 
 199.85.126.20#norton 
 185.228.168.168#cleanbrowsing 
 77.88.8.7#yandex 
@@ -24,10 +32,13 @@ PROVIDERSV4="
 "
 
 PROVIDERSV6="
+2a10:50c0::ad1:ff#adguard-v6
+2a10:50c0::1:ff#adguarduf-v6
+2620:119:35::35#cisco-v6
+2a07:e340::2#mullvad-v6
 2606:4700:4700::1111#cloudflare-v6
 2001:4860:4860::8888#google-v6
 2620:fe::fe#quad9-v6
-2620:119:35::35#opendns-v6
 2a0d:2a00:1::1#cleanbrowsing-v6
 2a02:6b8::feed:0ff#yandex-v6
 2a00:5a60::ad1:0ff#adguard-v6
@@ -64,7 +75,7 @@ fi
     
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com whatsapp.com"
+DOMAINS2TEST="www.google.com naver.com cn.hongik.ac.kr www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com namu.wiki"
 
 
 totaldomains=0
