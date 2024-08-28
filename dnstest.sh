@@ -75,7 +75,7 @@ fi
     
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com naver.com cn.hongik.ac.kr www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com namu.wiki"
+DOMAINS2TEST="namu.wiki cn.hongik.ac.kr www.naver.com www.google.com www.youtube.com www.letskorail.com wikipedia.org store.steampowered.com gmail.com"
 
 
 totaldomains=0
